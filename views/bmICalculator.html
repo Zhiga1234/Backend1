@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>BMI Calculator</title>
+  <link rel="icon" type="image/x-icon" href="/images/logo.png">
+  <link rel="stylesheet" type="text/css" href="/public/boot-jquery/bootstrap.css" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
+  <link href="/public/style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+<div class="hero_area">
+  <header class="header_section">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container ">
+        <a class="navbar-brand" href="index.html">
+          <img src="/public/images/logo.png" alt="">
+          <span>
+              BMI Calculator
+            </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="history.html">History</a>
+              </li>
+            </ul>
+          </div>
+          <div class="quote_btn-container  d-flex justify-content-center">
+            <a href="">
+              <img src="images/call.png" alt="">
+              CALL : 8707 344 08 88
+            </a>
+            <a href="">
+                <span>
+                  @
+                </span>
+              221469@astanait.edu.kz
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+</div>
+
+<section class="about_section layout_padding">
+  <div class="container1 container mx-4">
+    <h1 class="heading">Body Mass Index (BMI) Calculator</h1>
+    Your Height (cm):
+    <input type="number" class="input" id="height" value="180" placeholder="Enter your height in cm">
+    Your Weight (kg):
+    <input type="number" class="input" id="weight" value="80" placeholder="Enter your weight in kg">
+    <button class="btn" id="btn">Compute BMI</button>
+    <input disabled type="text" class="input" id="bmi-result">
+    <h4 class="info-text">Weight Condition: <span id="weight-condition"></span></h4>
+  </div>
+</section>
+
+
+<div class="layout_padding-top layout_padding2-bottom">
+    <section class="info_section layout_padding">
+      <div class="container">
+        <div class="info_social">
+          <div>
+            <a href="">
+              <img src="/public/images/twitter.png" alt="">
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <img src="/public/images/insta.png" alt="">
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <img src="/public/images/linkedin.png" alt="">
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <img src="/public/images/fb.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div>
+          <p>
+            Hello, my name is Zhigitali. I am from the SE-2202 group.
+  </p>
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript" src="/public/bmi.js"></script>
+    <script type="text/javascript" src="/public/boot-jquery/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="/public/boot-jquery/bootstrap.js"></script>
+
+
+  </body>
+
+  </html>
