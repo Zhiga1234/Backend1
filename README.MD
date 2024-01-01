@@ -8,7 +8,7 @@ Within my project, there is a BMI calculator featuring an appealing design craft
 I've done everything except the additional bonus (history).
 
 ##  Used npm packages
-**Express**: 
+**Express**
 **Body Parser** 
  **Path**:
 
