@@ -12,6 +12,9 @@ I've done everything except the additional bonus (history).
 **Body Parser** 
  **Path**:
 
-To get started, you can use the command `nodemon route.js` or `node route.js`.
+To get started, you can use the command 'npm start'
+
+"> bmicalcultaor@1.0.0 start
+> node routes/bmiRoutes.js"
 
 The server is running on port 3000.
