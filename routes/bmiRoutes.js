@@ -1,7 +1,14 @@
-const express = require('express');
 const path = require('path');
-const router = express.Router();
+// const router = require('../root');
+const bodyParser = require('body-parser');
+const express = require('express');
+const router = express();
 
+const port = 3000;
+
+router.use('/public', express.static(path.join(__dirname, '../public')));
+router.use(bodyParser.json());
+router.use(bodyParser.urlencoded({ extended: true }));
 
 router.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../views/bmiCalculator.html'));
@@ -37,4 +44,6 @@ router.post('/bmicalculator', (req, res) => {
     res.json({ bmiResult: bmiValue.toFixed(2), message: resultMessage });
 });
 
-module.exports = router;
+router.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
+});
